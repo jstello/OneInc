@@ -47,7 +47,7 @@ export default function Home() {
     abortControllerRef.current = new AbortController();
 
     try {
-      const response = await fetch('http://localhost:8000/api/rephrase', {
+      const response = await fetch('http://localhost:8001/api/rephrase', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
