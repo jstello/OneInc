@@ -77,9 +77,20 @@ npm run dev
 ```
 The frontend will be accessible at `http://localhost:3000`.
 
+## Security Features
+
+- **API Key Security:** Environment variables are properly managed with `.env` file excluded from git
+- **Input Sanitization:** All user input is sanitized to prevent injection attacks
+- **Rate Limiting:** 10 requests per minute per IP address to prevent abuse
+- **Timeout Handling:** 30-second timeout per writing style processing
+- **CORS Security:** Restricted CORS configuration with specific origins and methods
+- **Error Handling:** Secure error messages that prevent information disclosure
+- **Logging:** Comprehensive logging for security monitoring and debugging
+
 ## Important Notes
 
 - **Python Version:** This project was developed and tested with Python 3.13. Dependency conflicts may arise with other Python versions.
 - **Dependency Management:** `uv` is used for backend dependency management.
-- **API Key:** Ensure your DeepSeek API key is correctly set in the `.env` file.
-- **CORS:** The backend is configured with CORS to allow requests from `http://localhost:3000`.
+- **API Key Security:** Ensure your DeepSeek API key is correctly set in the `.env` file and never commit it to git.
+- **CORS:** The backend is configured with secure CORS settings to allow requests from `http://localhost:3000` only.
+- **Security Testing:** Run `pytest test_main.py -v` to verify all security features are working correctly.

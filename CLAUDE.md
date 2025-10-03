@@ -21,9 +21,10 @@ This is an AI Writing Assistant application that rephrases user input into diffe
 - **Framework**: FastAPI with Python 3.13
 - **API**: RESTful API with Server-Sent Events (SSE) for streaming responses
 - **Key Files**:
-  - `backend/main.py` - Main FastAPI application with rephrasing logic
-  - `backend/test_main.py` - Comprehensive test suite
+  - `backend/main.py` - Main FastAPI application with rephrasing logic and security features
+  - `backend/test_main.py` - Comprehensive test suite including security tests
 - **LLM Integration**: DeepSeek API via OpenAI-compatible client
+- **Security Features**: Input sanitization, rate limiting, timeout handling, secure error handling
 
 ### Configuration
 - **Environment**: Root `.env` file with DeepSeek API keys for both frontend and backend
@@ -71,11 +72,20 @@ pytest test_main.py -v                               # Run backend tests
 
 ### Backend Tests
 - Health endpoint tests
-- Input validation tests
+- Input validation and sanitization tests
 - Stream generation tests
-- Error handling tests
+- Error handling and security tests
+- Rate limiting tests
+- Timeout handling tests
 
 Run tests with: `cd backend && pytest test_main.py -v`
+
+### Security Testing
+The test suite includes comprehensive security testing:
+- Input sanitization verification
+- Rate limiting functionality
+- Error handling without information disclosure
+- CORS configuration validation
 
 ## Environment Setup
 
@@ -85,7 +95,11 @@ Run tests with: `cd backend && pytest test_main.py -v`
 
 ## Important Notes
 
-- **CORS**: Backend configured to allow requests from `http://localhost:3000`
+- **CORS**: Backend configured with secure CORS settings to allow requests from `http://localhost:3000` only
 - **Streaming**: Uses Server-Sent Events for real-time response display
-- **Error Handling**: Comprehensive error handling in both frontend and backend
+- **Error Handling**: Comprehensive error handling that prevents information disclosure
+- **Security**: Production-grade security features including input sanitization, rate limiting, and timeout handling
 - **UI/UX**: Production-grade enterprise application design with dark mode support
+- **API Key Security**: Environment variables properly managed with `.env` file excluded from git
+- **Rate Limiting**: 10 requests per minute per IP to prevent abuse
+- **Logging**: Comprehensive logging for security monitoring and debugging

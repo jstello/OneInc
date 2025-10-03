@@ -349,3 +349,19 @@ INFO:     Finished server process [86758]
 INFO:     Started server process [87155]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+INFO:     127.0.0.1:50549 - "OPTIONS /api/rephrase HTTP/1.1" 200 OK
+2025-10-03 09:26:28,318 - main - INFO - Rate limit check passed for client: 127.0.0.1, requests: 1
+2025-10-03 09:26:28,318 - main - INFO - Processing rephrase request from client: 127.0.0.1, text length: 99
+INFO:     127.0.0.1:50549 - "POST /api/rephrase HTTP/1.1" 200 OK
+2025-10-03 09:26:29,671 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 09:26:32,364 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 09:26:35,267 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 09:26:38,755 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:57618 - "OPTIONS /api/rephrase HTTP/1.1" 200 OK
+2025-10-03 09:43:41,364 - main - INFO - Rate limit check passed for client: 127.0.0.1, requests: 1
+2025-10-03 09:43:41,364 - main - INFO - Processing rephrase request from client: 127.0.0.1, text length: 708
+INFO:     127.0.0.1:57618 - "POST /api/rephrase HTTP/1.1" 200 OK
+2025-10-03 09:43:42,458 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 09:43:50,035 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 09:43:59,354 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 09:44:08,160 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
