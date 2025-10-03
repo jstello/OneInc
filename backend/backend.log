@@ -365,3 +365,11 @@ INFO:     127.0.0.1:57618 - "POST /api/rephrase HTTP/1.1" 200 OK
 2025-10-03 09:43:50,035 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
 2025-10-03 09:43:59,354 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
 2025-10-03 09:44:08,160 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [87155]
+INFO:     Started server process [98486]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

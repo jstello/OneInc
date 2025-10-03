@@ -3,15 +3,19 @@ AI Writing Assistant - FastAPI Backend
 Provides API endpoints for text rephrasing using LLM
 """
 from dotenv import load_dotenv
+import os
 
-load_dotenv(dotenv_path="../.env")
+# Load environment variables from .env file if it exists
+# In container environments, environment variables are typically set directly
+env_path = os.path.join(os.path.dirname(__file__), '..', '.env')
+if os.path.exists(env_path):
+    load_dotenv(dotenv_path=env_path)
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from typing import AsyncGenerator
-import os
 import json
 import re
 import time
@@ -71,7 +75,7 @@ app.add_middleware(
 # Initialize DeepSeek client (compatible with OpenAI API)
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 if not DEEPSEEK_API_KEY:
-    raise ValueError("DEEPSEEK_API_KEY environment variable not set. Please check your .env file.")
+    raise ValueError("DEEPSEEK_API_KEY environment variable not set. Please check your .env file or container environment variables.")
 
 client = AsyncOpenAI(
     api_key=DEEPSEEK_API_KEY,

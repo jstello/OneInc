@@ -11,3 +11,71 @@
  ○ Compiling / ...
  ✓ Compiled / in 943ms (466 modules)
  ✓ Compiled in 88ms (241 modules)
+ ✓ Compiled in 510ms (472 modules)
+ ✓ Compiled in 186ms (472 modules)
+ ✓ Compiled in 97ms (472 modules)
+ ✓ Compiled in 130ms (472 modules)
+ ✓ Compiled in 73ms (244 modules)
+ ✓ Compiled in 75ms (244 modules)
+ ✓ Compiled in 263ms (484 modules)
+ ⨯ Error: Cannot find module './429.js'
+Require stack:
+- /Users/juan_tello/repos/OneInc/frontend/.next/server/webpack-runtime.js
+- /Users/juan_tello/repos/OneInc/frontend/.next/server/app/page.js
+- /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/require.js
+- /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/load-components.js
+- /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/build/utils.js
+- /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/lib/router-server.js
+- /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/lib/start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1405:15)
+    at /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1061:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1066:22)
+    at Module._load (node:internal/modules/cjs/loader:1215:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1491:12)
+    at mod.require (/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/juan_tello/repos/OneInc/frontend/.next/server/webpack-runtime.js:198:28)
+    at /Users/juan_tello/repos/OneInc/frontend/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/juan_tello/repos/OneInc/frontend/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/juan_tello/repos/OneInc/frontend/.next/server/webpack-runtime.js:162:22)
+    at /Users/juan_tello/repos/OneInc/frontend/.next/server/app/page.js:16:9370
+    at Object.<anonymous> (/Users/juan_tello/repos/OneInc/frontend/.next/server/app/page.js:16:9411)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Module._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1491:12)
+    at mod.require (/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/require.js:109:84)
+    at /Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/load-components.js:74:84
+    at async loadComponentsImpl (/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/load-components.js:74:26)
+    at async DevServer.findPageComponentsImpl (/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/next-server.js:675:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/juan_tello/repos/OneInc/frontend/.next/server/webpack-runtime.js',
+    '/Users/juan_tello/repos/OneInc/frontend/.next/server/app/page.js',
+    '/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/require.js',
+    '/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/load-components.js',
+    '/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/build/utils.js',
+    '/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/juan_tello/repos/OneInc/frontend/node_modules/next/dist/server/lib/start-server.js'
+  ],
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 943ms (638 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
