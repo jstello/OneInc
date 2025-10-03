@@ -1,0 +1,13 @@
+
+> ai-writing-assistant-frontend@0.1.0 dev
+> next dev
+
+   ▲ Next.js 14.1.0
+   - Local:        http://localhost:3000
+
+ ✓ Ready in 1528ms
+(node:72113) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ○ Compiling / ...
+ ✓ Compiled / in 943ms (466 modules)
+ ✓ Compiled in 88ms (241 modules)
